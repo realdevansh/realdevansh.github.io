@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="style1.css">
-
 # This is a Heading1
 This is a normal line
 ```python
