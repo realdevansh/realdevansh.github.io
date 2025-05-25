@@ -4,26 +4,17 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+ Hello!! This website is under construction! So please don't mind jumbled mess of everything everywhere!!
 </p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I am Devansh Bhatnagar. This is my very basic blogging website, for people interested in my work and wishing to keep up with me and my projects. I love learning and deep research and Computer Science is one rabbit hole after another! My true passion is learning and solving problems in creative ways. I enjoy tinkering with machines and electronics. I am very bad at coding but I love programming! If you want to see more of my stuff, check out my [Blogs](https://realdevansh.github.io/archive).
 
-There are currently two themes built on Poole:
+I believe you are familiar with my Linkedin and GitHub!
 
-- [Hyde](https://hyde.getpoole.com)
-- [Lanyon](https://lanyon.getpoole.com)
+### Website
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-- Built for [Jekyll](https://jekyllrb.com)
+This website is built with:
 - Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-- Coded with [Atom](https://atom.io), an amazing open source code editor
+- [Theme](https://github.com/andrewhwanpark/dark-poole)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Thanks for reading! If you want to talk, feel free to communicate via email or linkedin

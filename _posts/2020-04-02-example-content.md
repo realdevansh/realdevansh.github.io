@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Example content
+layout: default
+title: Default
 ---
 
 **Howdy!** This is an example blog post that shows several types of HTML content supported in this theme.
