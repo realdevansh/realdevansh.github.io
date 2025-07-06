@@ -166,3 +166,17 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
 
 [^fn-sample_footnote]: Handy! Now click the return link to go back.
+
+
+
+
+## Google Analytics
+
+Specify `ga_analytics` in your `_config.yml` and restart the server to add Google Analytics tracking code.
+
+
+
+```ruby
+# Google Analytics example
+ga_analytics: UA-000000-0
+```

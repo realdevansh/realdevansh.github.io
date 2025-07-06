@@ -156,11 +156,3 @@ There are also ten grayscale colors to choose from.
   </dd>
 </dl>
 
-## Google Analytics
-
-Specify `ga_analytics` in your `_config.yml` and restart the server to add Google Analytics tracking code.
-
-```ruby
-# Google Analytics example
-ga_analytics: UA-000000-0
-```
