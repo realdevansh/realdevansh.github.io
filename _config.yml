@@ -1,6 +1,6 @@
 # Setup
 title: Devansh
-url: https://realdevansh.github.io
+url: https://realdevansh.github.io/about
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -32,8 +32,8 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
+  name: Devansh Bhatnagar
+  url: https://linkedin.com/u/realdevanshbhatnagar/
   email: realdevanshbhatnagar@gmail.com
 
 # Custom vars

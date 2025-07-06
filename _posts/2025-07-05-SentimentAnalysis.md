@@ -1,105 +1,42 @@
 ---
 layout: post
-title: Options
+title: Sentiment Analysis
 ---
 
-With Poole as a baseline theme for Jekyll, there aren't many options available out of the box. Basic light and dark mode support is included. Colors are also provided for your own customization, while other Poole themes build on this to create more unique looks.
+This is a rough documentation of or the Journey to the Sentiment Analysis project that helped me learn NLP and basic ML algorithms
 
 - toc
 {: toc }
 
-## Dark mode
+## Data Gathering
+Made a review scraper with requests and bs4 to get random threads data.
 
-**Dark mode is enabled automatically** via CSS media query—you'll find the source code for this in the `_sass/_variables.scss` stylesheet. If you're familiar with CSS custom properties, you can also use this method to build your own color schemes.
+## Pre Processing
+Cleaned the urls, named entities, idioms, spelling errors, mixed langauges, acronyms, slangs, etc. to improve efficiency. ALbeit I claim that this is all from scratch, you can't possibly expect me or anyone to be serious about data cleaning process, thus I used AI Overlords' help to clean the strings and store them in a neat and clean CSV file.
 
-[Read more about using CSS dark mode](https://markdotto.com/2018/11/05/css-dark-mode/) via media queries like this:
+## Labelling
+So, I cheated and used the distilled BERT(will be distilling it in future for demonstration) to classify the sentiments of the dataset. This process is usually done by a large group of humans to train the learning models but I am lazy and you can't expect me to read 1,000 lines of non sense thread dumps.
 
-```scss
-// Example media query to detect dark mode
-@media (prefers-color-scheme: dark) {
-  // ...
-}
-```
 
-## Creating themes
+## Looking at the data
+Using pandas profiling generated a report for what the data set looks like, so you know what it's going to be like
 
-If you want to make your own color schemes, modify the CSS variables in the `_sass/_variables.scss` stylesheet with a scoped data attribute or class name.
 
-For example, below we've created the beginnings of a blue theme:
+## Splitting the Database
+So, the proper way to do this would be to preserve the variance of the data but I am lazy and this for NLP and ML algorithms not data preprocessing master class. So I shuffled the database and made a 3:1 split. 750 tweets(or whatever the thread lingo is) for "training" and 250 for "testing".
 
-```scss
-// Example blue theme
-[data-theme="blue"] {
-  --body-bg: var(--blue);
-  --body-color: #fff;
-}
-```
+PS: Ideally you need at least 30,000 data entities to get your model to produce meaningful predictions but I don't have that much resources to spare and thus we will hallucinate that the model is good and everything is fine.
 
-Then, apply the theme by adding `data-theme="blue"` to the `<html>` element.
 
-## Colors
+# Models
+Get your Sci-Kit learn documentation's ready, we are about to import Naive Bayes Classifier and SVM Classifier.
 
-Change your site styles by modifying the source code with these CSS custom properties. Poole's colors come from the [Open Color project](https://yeun.github.io/open-color/).
+## Naive Bayes Classifier
+-->
 
-<dl class="colors">
-  <dt style="background-color: #fa5252;"></dt>
-  <dd>
-    <strong>var(--red)</strong><br>
-    #fa5252
-  </dd>
-  <dt style="background-color: #e64980;"></dt>
-  <dd>
-    <strong>var(--pink)</strong><br>
-    #e64980
-  </dd>
-  <dt style="background-color: #be4bdb;"></dt>
-  <dd>
-    <strong>var(--grape)</strong><br>
-    #be4bdb
-  </dd>
-  <dt style="background-color: #7950f2;"></dt>
-  <dd>
-    <strong>var(--purple)</strong><br>
-    #7950f2
-  </dd>
-  <dt style="background-color: #4c6ef5;"></dt>
-  <dd>
-    <strong>var(--indigo)</strong><br>
-    #4c6ef5
-  </dd>
-  <dt style="background-color: #228be6;"></dt>
-  <dd>
-    <strong>var(--blue)</strong><br>
-    #228be6
-  </dd>
-  <dt style="background-color: #15aabf;"></dt>
-  <dd>
-    <strong>var(--cyan)</strong><br>
-    #15aabf
-  </dd>
-  <dt style="background-color: #12b886;"></dt>
-  <dd>
-    <strong>var(--teal)</strong><br>
-    #12b886
-  </dd>
-  <dt style="background-color: #40c057;"></dt>
-  <dd>
-    <strong>var(--green)</strong><br>
-    #40c057
-  </dd>
-  <dt style="background-color: #fab005;"></dt>
-  <dd>
-    <strong>var(--yellow)</strong><br>
-    #fab005
-  </dd>
-  <dt style="background-color: #fd7e14;"></dt>
-  <dd>
-    <strong>var(--orange)</strong><br>
-    #fd7e14
-  </dd>
-</dl>
+## SVM Classifier
 
-## Gray colors
+Now calm down and let us import 
 
 There are also ten grayscale colors to choose from.
 
