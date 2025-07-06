@@ -2,7 +2,7 @@
 title: Devansh
 url: https://realdevansh.github.io
 paginate: 1
-baseurl: "/about"
+baseurl: ""
 permalink: pretty
 
 # Gems
