@@ -1,8 +1,8 @@
 # Setup
 title: Devansh
-url: https://realdevansh.github.io/about
+url: https://realdevansh.github.io
 paginate: 1
-baseurl: ""
+baseurl: "/about"
 permalink: pretty
 
 # Gems
